@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Keep Your Note save</title>
+</head>]
+<style>
+    .container::before{
+        content: "";
+        background-image: url('https://images.pexels.com/photos/459304/pexels-photo-459304.jpeg?cs=srgb&dl=pexels-pixabay-459304.jpg&fm=jpg');
+        position: absolute;
+        right: 0em;
+        top: 4em;
+        width: 100%;
+        height: 58%;
+        z-index: -1;
+        margin-bottom: 3rem;
+
+    }
+    .h1{
+        color: white;
+     
+    }
+    .box{
+        background-color: rgb(202, 196, 196);
+        /* color: white; */
+    }
+    #addbtn{
+        color: rgb(255, 255, 255);
+        background-color: rgb(83, 86, 243);
+    }
+
+</style>
+
+<body>
+
+    <!-- Navigation bar -->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">ImpKeepNote</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ml-3 mb-2 mb-lg-0">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="d-flex">
+                    <input class="form-control me-2" id="searchtxt" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" id="searchbtn" style="color: white;">Search</button>
+              </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- section -->
+
+    <div class="container my-3">
+        <h1 class="h1">Keep All Your Important Notes Here</h1>
+         <div class="box card row"> 
+            <div class="card-body">
+              <h5 class="card-title">Add A Note</h5>
+              <div class="form-floating" value="Type Here"  placeholder="Start typing Here">
+                <textarea class="form-control my-3" id="addtext" style="height: 100px"></textarea>
+              </div>
+                <button class="btn btn-outline-success" id="addbtn" type="submit">Add Note</button>
+             
+            </div>
+          </div> 
+      
+          <hr>
+          <br>
+          <br>
+          <br>
+
+          <h1>Your Notes</h1>
+           <div id="notes" class="row container-fluid">
+
+            <div id="notecard" class=" my-2 mx-2 card " style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Note</h5>
+                  <p class="card-text"></p>
+                  <button href="#" class="btn btn-primary">Delete Note</button>
+                </div>
+              </div>
+           </div>
+        
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="1st project.js"></script>
+</body>
+
+</html>
